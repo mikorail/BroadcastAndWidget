@@ -19,6 +19,7 @@ public class CustomReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         String intentAction = intent.getAction();
         String message=null;
+        assert intentAction != null;
         switch (intentAction){
             case Intent.ACTION_POWER_CONNECTED:
                 message = "Power Cpnnected!";
